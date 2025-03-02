@@ -1587,7 +1587,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 .pub {
     /* border-top: thin solid #c0c0c0; */
     /* radius: 15px; */
-    /* float: left !important; */
+    float: left !important;
     margin-top: 5px;
     margin-bottom: 15px;
     /* padding-top: 15px; */
