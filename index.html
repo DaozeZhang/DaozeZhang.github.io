@@ -100,12 +100,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </a>
 
   <div class="trigger">
-    <a class="page-link" href="#bio"><b>Biography</b></a>
-    <a class="page-link" href="#timeline"><b>Milestone</b></a>
-    <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
-    <a class="page-link" href="#publications"><b>Publications</b></a>
-    <a class="page-link" href="#teaching"><b>Teaching</b></a>
-    <a class="page-link" href="#misc"><b>Misc</b></a>
+
+    <!-- 语言切换按钮 -->
+    <button id="langToggle" class="lang-switch" aria-label="切换语言">
+      中文 / EN
+    </button>
+
+    <a class="page-link" href="#bio" data-i18n="Biography"><b>Biography</b></a>
+    <a class="page-link" href="#timeline" data-i18n="Milestone"><b>Milestone</b></a>
+    <a class="page-link" href="#awards" data-i18n="Honors"><b>Honors & Awards</b></a>
+    <a class="page-link" href="#publications" data-i18n="Publications"><b>Publications</b></a>
+    <a class="page-link" href="#teaching" data-i18n="Teaching"><b>Teaching</b></a>
+    <a class="page-link" href="#misc" data-i18n="Misc"><b>Misc</b></a>
     <!-- <a class="page-link" href="files/CV.pdf"><b>CV</b></a> -->
     <!--<a class="page-link" href="#otherprojects">Projects</a>-->
     <!-- Button for Posts -->
@@ -123,7 +129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div id="my-name" class="text-grey-dark">
         Daoze Zhang (张道泽)<br>
       </div>
-      <div id="my-title" class="text-grey">
+      <div id="my-title" class="text-grey" data-i18n="College">
         College of Computer Science, ZJU
       </div>
 
@@ -217,10 +223,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <h1 class="md-heading text-left">
     <i class="fa fa-id-card" aria-hidden="true"></i>
-    About
+    <b data-i18n="Biography">Biography</b>
   </h1>
   <div class="bio-body" style="overflow:hidden;">
-    <p>
+    <p data-i18n="Hello">
       Hello, my name is Daoze Zhang and I am currently pursuing a Master's degree in 
       <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, 
       fortunately advised by 
@@ -237,15 +243,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div style="width: 50%; float:left">
 			<h3>
 		    <i class="fa fa-star" aria-hidden="true"></i>
-		    <strong>Research Topics</strong>
+		    <strong data-i18n="Research">Research Topics</strong>
 			</h3>
-      <b>Machine Learning for Healthcare</b>
+      <b data-i18n="Machine">Machine Learning for Healthcare</b>
       <br>
-      <b>Time Series Analysis</b>
+      <b data-i18n="Time">Time Series Analysis</b>
       <br>
-      <b>(Multimodal) Large Language Models</b>
+      <b data-i18n="Multimodal">(Multimodal) Large Language Models</b>
       <br>
-      <b>Recommendation System</b>
+      <b data-i18n="Recommendation">Recommendation System</b>
       <!-- <ul>
         <li>on physiological signal data</li>
         <li>on general time series data</li>
@@ -255,16 +261,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div style="width: 50%; float:right">
 			<h3>
 				<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-				<strong>Education</strong>
+				<strong data-i18n="Education">Education</strong>
 			</h3>
-			<b>Zhejiang University</b><br>
+			<b data-i18n="Zhejiang">Zhejiang University</b><br>
 			<ul>
-        <li>Academic Master, AI Institute, College of CS, 26'</li>
-        <li>Bachelor, Computer Science, College of CS, 23'</li>
+        <li data-i18n="Academic">Academic Master, AI Institute, College of CS, 26'</li>
+        <li data-i18n="Bachelor">Bachelor, Computer Science, College of CS, 23'</li>
 			</ul>
-      <b>Xi'an Tieyi High School</b><br>
+      <b data-i18n="Xi">Xi'an Tieyi High School</b><br>
       <ul>
-        <li>Hua Luogeng Science Elite Class, 19' </li>
+        <li data-i18n="Hua">Hua Luogeng Science Elite Class, 19' </li>
       </ul>
     </div>
   
@@ -295,9 +301,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="timeline" class="timeline-brief">
     <h1 class="md-heading text-left">
       <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-      Milestone
+        <b data-i18n="Milestone">Milestone</b>
     </h1>
-      <div class="timeline-item">
+
+      <div class="timeline-item" data-i18n="timeline8">
         <div class="timeline-date">
           Oct. 2024
         </div>
@@ -312,7 +319,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-i18n="timeline7">
         <div class="timeline-date">
           May. 2024
         </div>
@@ -327,7 +334,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-i18n="timeline6">
         <div class="timeline-date">
           Sept. 2023
         </div>
@@ -342,7 +349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-i18n="timeline5">
         <div class="timeline-date">
           Jul. 2023 
         </div>
@@ -357,7 +364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       
-      <div class="timeline-item">
+      <!-- <div class="timeline-item" data-i18n="timeline4">
         <div class="timeline-date">
           May. 2022 
         </div>
@@ -367,9 +374,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="timeline-desc">
           As the leader of the SRTP National Innovation Project, our work was rated as “Excellent” (the highest level)
         </div>
-      </div>
+      </div> -->
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-i18n="timeline3">
         <div class="timeline-date">
           Jul. 2021 
         </div>
@@ -387,7 +394,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item" data-i18n="timeline2">
         <div class="timeline-date">
           Sept. 2020
         </div>
@@ -411,7 +418,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div> -->
   
-      <div class="timeline-item">
+      <div class="timeline-item" data-i18n="timeline1">
         <div class="timeline-date">
           Sept. 2019
         </div>
@@ -436,22 +443,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="awards" class="bio">
     <h1 class="md-heading text-left">
       <i class="fa fa-tasks" aria-hidden="true"></i>
-      Selected Honors
+      <b data-i18n="Honors">Selected Honors</b>
     </h1>
     <ul>
       <!-- <li><strong></strong>, 2023 (<b>Highest honor </b>)</li> -->
-      <li>National Scholarship, 2024 (1st place among Masters of the AI Institute, Top 1%)</li>
-      <li>Outstanding Postgraduate Students, 2024</li>
-      <li>Outstanding Undergraduate Graduate of Zhejiang Province, 2023 (Top 5%)</li>
-      <li>Xiaomi Scholarship, 2022</li> 
+      <li data-i18n="honor10">National Scholarship, 2024 (1st place among Masters of the AI Institute, Top 1%)</li>
+      <li data-i18n="honor9">Outstanding Postgraduate Students of Zhejiang University, 2024</li>
+      <li data-i18n="honor8">Outstanding Undergraduate Graduate of Zhejiang Province, 2023 (Top 5%)</li>
+      <li data-i18n="honor7">Xiaomi Scholarship, 2022</li> 
       <!-- (3/800+) -->
-      <li>Zhejiang Provincial Government Scholarship, 2021 (Top 3%)</li>
-      <li>First-class Scholarship of Zhejiang University, 2021 (Top 3%)</li>
-      <li>Outstanding Student Scholarship of CTZ Education Foundation, 2021</li>
+      <li data-i18n="honor6">Zhejiang Provincial Government Scholarship, 2021 (Top 3%)</li>
+      <li data-i18n="honor5">First-class Scholarship of Zhejiang University, 2021 (Top 3%)</li>
+      <li data-i18n="honor4">Outstanding Student Scholarship of CTZ Education Foundation, 2021</li>
       <!-- (3/800+) -->
-      <li>Outstanding Student of Zhejiang University, 2021</li>
-      <li>First Prize in the Zhejiang Province College Physics Competition, 2020 (Top 5%)</li>
-      <li>Outstanding Youth League Member of Zhejiang University, 2020</li>
+      <li data-i18n="honor3">Outstanding Student of Zhejiang University, 2021</li>
+      <li data-i18n="honor2">First Prize in the Zhejiang Province College Physics Competition, 2020 (Top 5%)</li>
+      <li data-i18n="honor1">Outstanding Youth League Member of Zhejiang University, 2020</li>
     </ul>
   </div>
 </div>
@@ -462,13 +469,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="publications" class="publications">
   <h1 class="md-heading text-left">
     <i class="fa fa-file" aria-hidden="true"></i>
-    Publications 
+    <b data-i18n="Publications">Publications</b>
   </h1>
 
   <div class="pub-list">
     
     <h3>
-      <strong>Large Language Models: Automatic Review of Documents</strong>
+      <strong data-i18n="direction2">Large Language Models: Automatic Review of Documents</strong>
     </h3>
 
     <div class="pub">
@@ -543,7 +550,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <h3>
       <br>
-      <strong>AI for Healthcare: Deep Learning on Neural Signals</strong>
+      <strong data-i18n="direction1">AI for Healthcare: Deep Learning on Neural Signals</strong>
     </h3>
 
     <div class="pub">
@@ -752,26 +759,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="wrapper">
   <div id="teaching" class="bio">
     <h1 class="md-heading text-left">
-      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-    Teaching & Academic Service
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>  
+      <b data-i18n="Teaching">Teaching & Academic Service</b>
     </h1>
 
-    <b>Conference</b>
+    <b data-i18n="Conference">Conference</b>
     <ul>
-      <li>Program committee member of NeurIPS 2025</li>
-      <li>Oral presentation at KDD 2024 to introduce the paper of Brant-X</li>
+      <li data-i18n="NeurIPS25">Program committee member of NeurIPS 2025</li>
+      <li data-i18n="KDD24">Oral presentation at KDD 2024 to introduce the paper of Brant-X</li>
     </ul>
 
-    <b>Teaching Assistant</b>
+    <b data-i18n="Teaching Assistant">Teaching Assistant</b>
     <ul>
-      <li>CS 21121340: <i>Computer Networks</i>, with <a href="https://person.zju.edu.cn/0097159/744726.html">Prof. Xiqun Lu</a> (2023)</li>
-      <li>CS 21121340: <i>Computer Networks</i>, with <a href="https://person.zju.edu.cn/0097159/744726.html">Prof. Xiqun Lu</a> (2022)</li>
+      <li data-i18n="CS 21121340">CS 21121340: <i>Computer Networks</i>, with <a href="https://person.zju.edu.cn/0097159/744726.html">Prof. Xiqun Lu</a> (2023)</li>
+      <li data-i18n="CS 21121340">CS 21121340: <i>Computer Networks</i>, with <a href="https://person.zju.edu.cn/0097159/744726.html">Prof. Xiqun Lu</a> (2022)</li>
     </ul>
 
-    <b>Peer Tutoring Mentor</b>
+    <b data-i18n="Peer">Peer Tutoring Mentor</b>
     <ul>
-      <li>CS 211C0010: <i>Object-oriented Programming</i>, with <a href="https://person.zju.edu.cn/0015060">Prof. Weiwei Xu</a> (2021)</li>
-      <li>CS 211G0280: <i>Fundamentals of C Programming</i> (2020)</li>
+      <li data-i18n="CS 211C0010">CS 211C0010: <i>Object-oriented Programming</i>, with <a href="https://person.zju.edu.cn/0015060">Prof. Weiwei Xu</a> (2021)</li>
+      <li data-i18n="CS 211G0280">CS 211G0280: <i>Fundamentals of C Programming</i> (2020)</li>
     </ul>
     
   </div>
@@ -784,12 +791,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="bio-body" style="overflow:hidden;">
       <h1 class="md-heading text-left">
         <i class="fa fa-id-card" aria-hidden="true"></i>
-        Miscellaneous
+        <b data-i18n="Misc">Miscellaneous</b>
       </h1>  
       <table>
         <tbody><tr>
           <td width="50%" valign="middle">
-          <p style="margin-top: 0px; margin-bottom: 0px; margin-left: 30px; margin-right: 50px; line-height: 1.25;">
+          <p style="margin-top: 0px; margin-bottom: 0px; margin-left: 30px; margin-right: 50px; line-height: 1.25;" data-i18n="life">
             In life, I have a passion for history🏺, geography🌎, and classical music🎼. 
             I have also studied traditional arts such as seal carving and Chinese painting🎨. At the age of 13, I was honored to receive the gold medal🥇 in the Peace Cup Youth Painting and Calligraphy Competition held in the United States.
           </p>
@@ -804,7 +811,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <table>
         <tbody><tr>
           <td width="50%" valign="middle">
-            <p style="margin-top: 0px; margin-bottom: 0px; margin-left: 30px; margin-right: 50px; line-height: 1.25;">
+            <p style="margin-top: 0px; margin-bottom: 0px; margin-left: 30px; margin-right: 50px; line-height: 1.25;" data-i18n="student_union">
             During my two years as a member and deputy minister of the Arts Department in CKC Honors College Student Union, I fell in love with organizing and managing everything related to events and performances🌟. 
             Together with the team members, I was responsible for organizing multiple singing competitions, New Year's ceremonies, and graduation ceremonies. 
           </p>
@@ -819,7 +826,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <table>
         <tbody><tr>
           <td width="50%" valign="middle">
-            <p style="margin-top: 0px; margin-bottom: 0px; margin-left: 30px; margin-right: 50px; line-height: 1.25;">
+            <p style="margin-top: 0px; margin-bottom: 0px; margin-left: 30px; margin-right: 50px; line-height: 1.25;" data-i18n="video_clip">
               Furthermore, I have had the opportunity to take on the role of video editing🎬 for the <i>ZJU English version of "The Wave"</i>, which garnered recognition and promotion from various institutions including 
               <a href="https://zj.zjol.com.cn/news.html?id=1442314">Zhejiang News</a>, 
               <a href="https://www.thehour.cn/news/368090.html">Qianjiang Evening News</a>, 
@@ -930,6 +937,8 @@ jQuery(document).ready(function() {
     })
 });
 </script>
+
+<script src="i18n.js"></script>
 </body>
 
 <!--
