@@ -58,7 +58,7 @@ const dict = {
 
     "life": "生活中，我热爱历史🏺、地理🌎和古典音乐🎼，也学习过篆刻、国画等传统艺术🎨。13岁时，我有幸获得在美国举办的和平杯青少年书画大赛金奖🥇。",
     "student_union": "在竺可桢学院学生会工作的两年，我担任过文艺部副部长的职务。期间，我爱上了组织和策划一切与活动和表演相关的事务🌟。和团队成员一起，我负责组织了多次歌手大赛、新年晚会、毕业晚会等大型文艺活动。",
-    "video_clip": "此外，我有幸担任过浙江大学英文版《后浪》的视频剪辑🎬工作，该作品获得了包括<a href='https://zj.zjol.com.cn/news.html?id=1442314'>浙江新闻</a>、<a href='https://www.thehour.cn/news/368090.html'>钱江晚报</a>、<a href='https://mp.weixin.qq.com/s?__biz=MzAxNjA1NTgzOA==&mid=2651352704&idx=2&sn=4bde99994165e5c8858d086eb12e3a7e&chksm=800665f1b771ece7f3a2e32f0d9fd94c896bb831c227e2aef7f2b0c67d10ecdd60e6cca0ae7f&scene=27'>外语教学与研究出版社</a>、新浪、搜狐等多家机构的认可与推广。<a href='https://www.bilibili.com/video/BV18Z4y1s7JK/?vd_source=bcb72b08d031075a66a8b31572c0c798'>",
+    "video_clip": "此外，我有幸担任过浙江大学英文版《后浪》的视频剪辑🎬工作，该作品获得了包括<a href='https://zj.zjol.com.cn/news.html?id=1442314'>浙江新闻</a>、<a href='https://www.thehour.cn/news/368090.html'>钱江晚报</a>、<a href='https://mp.weixin.qq.com/s?__biz=MzAxNjA1NTgzOA==&mid=2651352704&idx=2&sn=4bde99994165e5c8858d086eb12e3a7e&chksm=800665f1b771ece7f3a2e32f0d9fd94c896bb831c227e2aef7f2b0c67d10ecdd60e6cca0ae7f&scene=27'>外语教学与研究出版社</a>、新浪、搜狐等多家媒体和机构的认可与推广。<a href='https://www.bilibili.com/video/BV18Z4y1s7JK/?vd_source=bcb72b08d031075a66a8b31572c0c798'><img src='https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=$.data.stat.view&url=https://api.bilibili.com/x/web-interface/view?bvid=BV18Z4y1s7JK' alt='bilibili'> </a>",
 },
   en: {
     "Biography": "<b>Biography</b>",
