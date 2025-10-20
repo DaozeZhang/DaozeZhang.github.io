@@ -16,7 +16,7 @@ const dict = {
         "我的研究兴趣包括深度学习和数据挖掘在医疗保健领域以及时间序列分析中的应用。此外，我还在积极探索大语言模型和多模态语言模型领域的前沿技术。" + 
         "我已经在诸如NeurIPS和KDD的AI国际顶会上发表多篇论文" + 
         // " <a href='https://scholar.google.com/citations?user=5beC28QAAAAJ' target='_blank'>" + 
-        // "<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/MrNobodyCali/MrNobodyCali.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&style=flat'/></a>" + 
+        // "<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/MrNobodyCali/MrNobodyCali.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&style=flat&labelColor=f0f0f0&color=8fb9ef'/></a>" + 
         "。如果您正在寻找任何形式的学术合作，欢迎您随时与我联系。此外，我目前正在寻求工业界的工作机会。如果您有任何指引，请随时与我联系，非常感谢！",    
     "Research": "研究方向",
     "Machine": "医疗健康领域的人工智能",
