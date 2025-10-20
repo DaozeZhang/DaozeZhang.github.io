@@ -33,6 +33,7 @@ const dict = {
     "timeline8": "<div class='timeline-date'> 2024年10月 </div> <div class='timeline-title'> 荣誉 </div> <div class='timeline-desc'> 以人工智能研究所硕士第一名获得国家奖学金 </div>",
     
     "Selected Honors": "主要荣誉",
+    "honor11": "提名并入围竺可桢奖学金（校设最高奖学金）校级答辩（前0.05%）",
     "honor10": "国家奖学金，2024年（人工智能研究所硕士第一名，前1%）",
     "honor9": "浙江大学优秀研究生，2024年",
     "honor8": "浙江省优秀本科毕业生，2023年（前5%）",
@@ -48,6 +49,7 @@ const dict = {
     "direction2": "大语言模型",
 
     "Conference": "学术会议",
+    "ICLR26": "在ICLR 2026担任Program committee member",
     "NeurIPS25": "在NeurIPS 2025担任Program committee member",
     "KDD24": "在KDD 2024作口头报告介绍Brant-X论文",
     "Teaching Assistant": "教学助教",
@@ -93,6 +95,7 @@ const dict = {
     "timeline8": "<div class='timeline-date'> Oct. 2024 </div> <div class='timeline-title'> Awards </div> <div class='timeline-desc'> National Scholarship </div> <div class='timeline-desc'> as 1st place among Masters of the AI Institute </div>",
 
     "Selected Honors": "Selected Honors",
+    "honor11": "Advanced to the university-level defense for the Chu Kochen Scholarship, the highest honor in ZJU (Finalist, Top 0.05%)", 
     "honor10": "National Scholarship, 2024 (1st place among Masters of the AI Institute, Top 1%)",
     "honor9": "Outstanding Postgraduate Students of Zhejiang University, 2024",
     "honor8": "Outstanding Undergraduate Graduate of Zhejiang Province, 2023 (Top 5%)",
@@ -108,6 +111,7 @@ const dict = {
     "direction2": "Large Language Models: Automatic Review of Documents",
 
     "Conference": "Conference",
+    "ICLR26": "Program committee member of ICLR 2026",
     "NeurIPS25": "Program committee member of NeurIPS 2025",
     "KDD24": "Oral presentation at KDD 2024 to introduce the paper of Brant-X",
     "Teaching Assistant": "Teaching Assistant",
