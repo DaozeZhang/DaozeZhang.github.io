@@ -1,0 +1,45 @@
+name: Get Citation Data
+
+on:
+  # 每天 08:00 UTC 跑一次（韩国时区 = UTC+9，对应 17:00）
+  schedule:
+    - cron: '0 8 * * *'
+  # 可手动触发
+  workflow_dispatch:
+  # 也可在 Pages 构建相关事件时触发（可选）
+  page_build:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 允许往仓库推分支
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install deps
+        run: |
+          pip install -r google_scholar_crawler/requirements.txt
+
+      - name: Run crawler
+        env:
+          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        run: |
+          python google_scholar_crawler/main.py
+
+      - name: Commit & push JSON to google-scholar-stats branch
+        run: |
+          cd results
+          git init
+          git config --local user.name "${GITHUB_ACTOR}"
+          git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add *.json
+          git commit -m "Update Scholar stats"
+          # 推到当前仓库的 google-scholar-stats 分支（覆盖）
+          export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git push "${remote_repo}" HEAD:google-scholar-stats --force
