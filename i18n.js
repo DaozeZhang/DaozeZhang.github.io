@@ -11,7 +11,7 @@ const dict = {
     "Misc": "<b>其他</b>",
     "College": "浙江大学 计算机科学与技术学院",
 
-    "Hello": "您好，我叫张道泽，目前正在<a href='https://www.zju.edu.cn/english/'>浙江大学</a>攻读硕士学位，有幸在<a href='http://yangy.org/'>杨洋</a>教授的指导下于<a href='http://www.dcd.zju.edu.cn/'>DCD实验室</a>开展研究。我的研究兴趣包括深度学习和数据挖掘在医疗保健领域以及时间序列分析中的应用。此外，我还在积极探索大语言模型和多模态语言模型领域的前沿技术。如果您正在寻找任何形式的学术合作，欢迎您随时与我联系。此外，我目前正在寻求工业界的工作机会。如果您有任何指引，请随时与我联系，非常感谢！",    "Research": "研究方向",
+    "Hello": "您好，我叫张道泽，目前正在<a href='https://www.zju.edu.cn/english/'>浙江大学</a>攻读硕士学位，有幸在<a href='http://yangy.org/'>杨洋</a>教授的指导下于<a href='http://www.dcd.zju.edu.cn/'>DCD实验室</a>开展研究。我的研究兴趣包括深度学习和数据挖掘在医疗保健领域以及时间序列分析中的应用。此外，我还在积极探索大语言模型和多模态语言模型领域的前沿技术。我已经在诸如NeurIPS和KDD的AI国际顶会上发表多篇论文<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/MrNobodyCali/MrNobodyCali.github.io/google-scholar-stats/gs_data_shieldsio.json'/>。如果您正在寻找任何形式的学术合作，欢迎您随时与我联系。此外，我目前正在寻求工业界的工作机会。如果您有任何指引，请随时与我联系，非常感谢！",    "Research": "研究方向",
     "Machine": "医疗健康领域的人工智能",
     "Time": "时间序列分析",
     "Multimodal": "(多模态)大语言模型",
