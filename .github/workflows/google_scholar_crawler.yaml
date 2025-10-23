@@ -1,29 +1,55 @@
 name: Get Citation Data
 
-on: 
- page_build: 
- schedule:
-  - cron:  '0 20 * * *'
+on:
+  page_build:
+  schedule:
+    - cron: '0 20 * * *'   # 每天 20:00 UTC 触发
+  workflow_dispatch:        # 允许手动触发
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15     # 整个 job 最长 15 分钟
+    permissions:
+      contents: write       # 允许往仓库推分支
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Reqs
-      run: |
-        sudo apt-get install python3-setuptools
-    - name: Run
-      run: |
-        cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
-        python3 main.py
-        cd ./results
-        git init
-        git config --local user.name "${GITHUB_ACTOR}"
-        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-        git add *.json
-        git commit -m "Updated Citation Data"
-        git push "${remote_repo}" HEAD:google-scholar-stats --force
-      env: 
-        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 如非必要可以直接删掉 apt-get 这步；确实要装，就加 -y 并先 update
+      # - name: Install system packages (optional)
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y python3-setuptools
+
+      - name: Install Python deps
+        working-directory: google_scholar_crawler
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run crawler (10 min timeout)
+        working-directory: google_scholar_crawler
+        timeout-minutes: 10
+        env:
+          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        run: |
+          set -e
+          python main.py
+
+      - name: Commit & push JSON to google-scholar-stats
+        working-directory: google_scholar_crawler/results
+        run: |
+          set -e
+          git init
+          git config --local user.name "${GITHUB_ACTOR}"
+          git config --local user.email "actions@github.com"
+          git add *.json
+          git commit -m "Updated Citation Data" || echo "No changes to commit"
+          # 使用 GITHUB_TOKEN 推送
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
+          git push origin HEAD:google-scholar-stats --force
