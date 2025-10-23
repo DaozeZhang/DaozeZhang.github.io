@@ -15,8 +15,8 @@ const dict = {
         "有幸在<a href='http://yangy.org/'>杨洋</a>教授的指导下于<a href='http://www.dcd.zju.edu.cn/'>DCD实验室</a>开展研究。" + 
         "我的研究兴趣包括深度学习和数据挖掘在医疗保健领域以及时间序列分析中的应用。此外，我还在积极探索大语言模型和多模态语言模型领域的前沿技术。" + 
         "我已经在诸如NeurIPS和KDD的AI国际顶会上发表多篇论文" + 
-        // " <a href='https://scholar.google.com/citations?user=5beC28QAAAAJ' target='_blank'>" + 
-        // "<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/MrNobodyCali/MrNobodyCali.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&style=flat&labelColor=f0f0f0&color=8fb9ef'/></a>" + 
+        " <a href='https://scholar.google.com/citations?user=5beC28QAAAAJ' target='_blank'>" + 
+        "<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DaozeZhang/DaozeZhang.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&style=flat&labelColor=f0f0f0&color=8fb9ef'/></a>" + 
         "。如果您正在寻找任何形式的学术合作，欢迎您随时与我联系。此外，我目前正在寻求工业界的工作机会。如果您有任何指引，请随时与我联系，非常感谢！",    
     "Research": "研究方向",
     "Machine": "医疗健康领域的人工智能",
@@ -58,13 +58,15 @@ const dict = {
     "Conference": "学术会议",
     "ICLR26": "在ICLR 2026担任Program committee member",
     "NeurIPS25": "在NeurIPS 2025担任Program committee member",
+    "ChinaBMI24": "在ChinaBMI 2024，Brant-X被评为Spotlight墙报",
     "KDD24": "在KDD 2024作口头报告介绍Brant-X论文",
     "Teaching Assistant": "教学助教",
-    "CS 21121340-2": "CS 21121340: <i>计算机网络</i>，与<a href='https://person.zju.edu.cn/0097159/744726.html'>陆系群</a>教授（2023年）",
-    "CS 21121340-1": "CS 21121340: <i>计算机网络</i>，与<a href='https://person.zju.edu.cn/0097159/744726.html'>陆系群</a>教授（2022年）",
-    "Peer": "朋辈辅学导师",
-    "CS 211C0010": "CS 211C0010: <i>面向对象程序设计</i>，与<a href='https://person.zju.edu.cn/0015060'>许威威</a>教授（2021年）",
-    "CS 211G0280": "CS 211G0280: <i>C语言程序设计基础</i>（2020年）",
+    "CS 21121340-2": "<i>计算机网络 (CS 21121340)</i>，与<a href='https://person.zju.edu.cn/0097159/744726.html'>陆系群</a>教授，2023年",
+    "CS 21121340-1": "<i>计算机网络 (CS 21121340)</i>，与<a href='https://person.zju.edu.cn/0097159/744726.html'>陆系群</a>教授，2022年",
+    "Peer": "朋辈帮扶",
+    "gjmdm": "作为嘉宾受邀在<a href='https://mp.weixin.qq.com/s/GC5KWpuLxjjM75T9q7c4UQ'>\"国奖面对面\"</a>活动中介绍科研经验，2024年",
+    "CS 211C0010": "朋辈辅学导师：<i>面向对象程序设计 (CS 211C0010)</i>，与<a href='https://person.zju.edu.cn/0015060'>许威威</a>教授，2021年",
+    "CS 211G0280": "朋辈辅学导师：<i>C语言程序设计基础 (CS 211G0280)</i>，2020年",
 
     "life": "生活中，我热爱历史🏺、地理🌎和古典音乐🎼，也学习过篆刻、国画等传统艺术🎨。13岁时，我有幸获得在美国举办的和平杯青少年书画大赛金奖🥇。",
     "student_union": "在竺可桢学院学生会工作的两年，我担任过文艺部副部长的职务。期间，我爱上了组织和策划一切与活动和表演相关的事务🌟。和团队成员一起，我负责组织了多次歌手大赛、新年晚会、毕业晚会等大型文艺活动。",
@@ -75,11 +77,18 @@ const dict = {
     "Milestone": "<b>Milestone</b>",
     "Honors": "<b>Honors & Awards</b>",
     "Publications": "<b>Publications</b>",
-    "Teaching": "<b>Teaching</b>",
+    "Teaching": "<b>Teaching & Academic Service</b>",
     "Misc": "<b>Misc</b>",
     "College": "College of Computer Science, ZJU",
 
-    "Hello": "Hello, my name is Daoze Zhang and I am currently pursuing a Master's degree in <a href='https://www.zju.edu.cn/english/'>Zhejiang University</a>, fortunately advised by <a href='http://yangy.org/'>Prof. Yang Yang</a> in <a href='http://www.dcd.zju.edu.cn/'>DCD Lab</a>. My research interests include deep learning and data mining in the healthcare field and for time series analysis. Additionally, I am actively exploring more cutting-edge technologies in the field of large language models and multimodal language models. If you are looking for any form of academic cooperation, please feel free to touch me. <b>Futhermore, I am currently seeking job opportunities in industry. Please do not hesitate to contact me if you have any leads.</b> Thank you!",
+    "Hello": "Hello, my name is Daoze Zhang and I am currently pursuing a Master's degree in <a href='https://www.zju.edu.cn/english/'>Zhejiang University</a>, fortunately advised by <a href='http://yangy.org/'>Prof. Yang Yang</a> in <a href='http://www.dcd.zju.edu.cn/'>DCD Lab</a>. " + 
+        "My research interests include deep learning and data mining in the healthcare field and for time series analysis. Additionally, I am actively exploring more cutting-edge technologies in the field of large language models and multimodal language models. " + 
+        "I have published several papers" + 
+        " <a href='https://scholar.google.com/citations?user=5beC28QAAAAJ' target='_blank'>" + 
+        "<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DaozeZhang/DaozeZhang.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&style=flat&labelColor=f0f0f0&color=8fb9ef'/></a>" + 
+        " at the top international AI conferences such as NeurIPS and KDD. " + 
+        "If you are looking for any form of academic cooperation, please feel free to touch me. " + 
+        "<b>Futhermore, I am currently seeking job opportunities in industry. Please do not hesitate to contact me if you have any leads.</b> Thank you!",
     "Research": "Research Topics",
     "Machine": "Machine Learning for Healthcare",
     "Time": "Time Series Analysis",
@@ -120,13 +129,15 @@ const dict = {
     "Conference": "Conference",
     "ICLR26": "Program committee member of ICLR 2026",
     "NeurIPS25": "Program committee member of NeurIPS 2025",
+    "ChinaBMI24": "Brant-X was rated as Spotlight in ChinaBMI 2024",
     "KDD24": "Oral presentation at KDD 2024 to introduce the paper of Brant-X",
     "Teaching Assistant": "Teaching Assistant",
-    "CS 21121340-2": "CS 21121340: <i>Computer Networks</i>, with <a href='https://person.zju.edu.cn/0097159/744726.html'>Prof. Xiqun Lu</a> (2023)",
-    "CS 21121340-1": "CS 21121340: <i>Computer Networks</i>, with <a href='https://person.zju.edu.cn/0097159/744726.html'>Prof. Xiqun Lu</a> (2022)",
-    "Peer": "Peer Tutoring Mentor",
-    "CS 211C0010": "CS 211C0010: <i>Object-oriented Programming</i>, with <a href='https://person.zju.edu.cn/0015060'>Prof. Weiwei Xu</a> (2021)",
-    "CS 211G0280": "CS 211G0280: <i>Fundamentals of C Programming</i> (2020)",
+    "CS 21121340-2": "<i>Computer Networks (CS 21121340)</i>, with <a href='https://person.zju.edu.cn/0097159/744726.html'>Prof. Xiqun Lu</a>, 2023",
+    "CS 21121340-1": "<i>Computer Networks (CS 21121340)</i>, with <a href='https://person.zju.edu.cn/0097159/744726.html'>Prof. Xiqun Lu</a>, 2022",
+    "Peer": "Peer Mentoring",
+    "gjmdm": "<a href='https://mp.weixin.qq.com/s/GC5KWpuLxjjM75T9q7c4UQ'>Invited speaker</a> at the \"National Scholarship Face-to-Face\" event to introduce my research experience, 2024",
+    "CS 211C0010": "Peer Tutoring: <i>Object-oriented Programming (CS 211C0010)</i>, with <a href='https://person.zju.edu.cn/0015060'>Prof. Weiwei Xu</a>, 2021",
+    "CS 211G0280": "Peer Tutoring: <i>Fundamentals of C Programming (CS 211G0280)</i>, 2020",
     
     "life": "In life, I have a passion for history🏺, geography🌎, and classical music🎼. I have also studied traditional arts such as seal carving and Chinese painting🎨. At the age of 13, I was honored to receive the gold medal🥇 in the Peace Cup Youth Painting and Calligraphy Competition held in the United States.",
     "student_union": "During my two years as a member and deputy minister of the Arts Department in CKC Honors College Student Union, I fell in love with organizing and managing everything related to events and performances🌟. Together with the team members, I was responsible for organizing multiple singing competitions, New Year's ceremonies, and graduation ceremonies. ",
