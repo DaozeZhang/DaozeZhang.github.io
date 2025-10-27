@@ -32,9 +32,9 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run crawler (3 min timeout)
+      - name: Run crawler (3 times)
         working-directory: google_scholar_crawler
-        timeout-minutes: 3
+        timeout-minutes: 30
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
         run: |
