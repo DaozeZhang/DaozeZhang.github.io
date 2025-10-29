@@ -3,13 +3,13 @@ name: Get Citation Data
 on:
   page_build:
   schedule:
-    - cron: '0 20 * * *'   # 每天 20:00 UTC 触发
+    - cron: '0 23 * * *'   # 每天 23:00 UTC 触发
   workflow_dispatch:        # 允许手动触发
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30     # 整个 job 最长 30 分钟
+    timeout-minutes: 15     # 整个 job 最长 15 分钟
     permissions:
       contents: write       # 允许往仓库推分支
 
@@ -34,7 +34,7 @@ jobs:
 
       - name: Run crawler (3 times)
         working-directory: google_scholar_crawler
-        timeout-minutes: 30
+        timeout-minutes: 15
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
         run: |
