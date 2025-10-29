@@ -1,51 +1,48 @@
-from scholarly import scholarly
-import json
-from datetime import datetime
-import os
-import time
+import os, json, time, random, datetime
+import requests
+from bs4 import BeautifulSoup
 
-MAX_RETRIES = 3        # 最多重试 3 次
-RETRY_DELAY = 300      # 每次失败后等待 5 分钟（300 秒）
+SCHOLAR_ID = os.environ["GOOGLE_SCHOLAR_ID"]
+URL = f"https://scholar.google.com/citations?hl=en&user={SCHOLAR_ID}"
 
-def fetch_author_data():
-    """尝试抓取 Google Scholar 作者数据"""
-    author = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-    scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
-    author['updated'] = str(datetime.now())
-    author['publications'] = {v['author_pub_id']: v for v in author['publications']}
-    return author
+UA_LIST = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36",
+]
+
+def fetch_citations(max_retries=4):
+    for i in range(max_retries):
+        try:
+            headers = {"User-Agent": random.choice(UA_LIST)}
+            r = requests.get(URL, headers=headers, timeout=15)  # 硬超时
+            r.raise_for_status()
+            # 简单的反爬页判断：如果被重定向/出现验证码，直接重试
+            if "gs_md_c" in r.text and "Please show you're not a robot" in r.text:
+                raise RuntimeError("Captcha page")
+            soup = BeautifulSoup(r.text, "html.parser")
+            # 引用量在“概览”右侧统计表的第一个 td.gsc_rsb_std
+            td = soup.select_one("td.gsc_rsb_std")
+            if not td:
+                raise RuntimeError("citation cell not found")
+            count = int(td.get_text(strip=True).replace(",", ""))
+            return count
+        except Exception as e:
+            # 退避一点点再重试
+            time.sleep(1.5 * (i + 1))
+    raise RuntimeError("Failed to fetch citations after retries")
 
 def main():
-    for attempt in range(1, MAX_RETRIES + 1):
-        try:
-            print(f"Attempt {attempt}/{MAX_RETRIES} — fetching author data...")
-            author = fetch_author_data()
-
-            # 输出结果目录
-            os.makedirs('results', exist_ok=True)
-            with open('results/gs_data.json', 'w', encoding='utf-8') as f:
-                json.dump(author, f, ensure_ascii=False, indent=2)
-
-            # 生成 Shields.io JSON
-            shieldio_data = {
-                "schemaVersion": 1,
-                "label": "citations",
-                "message": f"{author['citedby']}",
-            }
-            with open('results/gs_data_shieldsio.json', 'w', encoding='utf-8') as f:
-                json.dump(shieldio_data, f, ensure_ascii=False)
-
-            print("✅ Successfully fetched and saved author data.")
-            break  # 成功就退出循环
-
-        except Exception as e:
-            print(f"❌ Attempt {attempt} failed: {e}")
-            if attempt < MAX_RETRIES:
-                print(f"⏳ Waiting {RETRY_DELAY / 60} minutes before retrying...")
-                time.sleep(RETRY_DELAY)
-            else:
-                print("🚨 All attempts failed. Exiting.")
-                raise  # 抛出最后一次异常让 CI 报错
+    citations = fetch_citations()
+    data = {
+        "updated": datetime.datetime.utcnow().isoformat() + "Z",
+        "citedby": citations
+    }
+    os.makedirs("results", exist_ok=True)
+    with open("results/gs_data.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    with open("results/gs_data_shieldsio.json", "w", encoding="utf-8") as f:
+        json.dump({"schemaVersion":1,"label":"citations","message":str(citations)}, f)
 
 if __name__ == "__main__":
     main()
