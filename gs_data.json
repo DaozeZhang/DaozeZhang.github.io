@@ -1,0 +1,183 @@
+{
+  "container_type": "Author",
+  "filled": [
+    "basics",
+    "publications",
+    "indices",
+    "counts"
+  ],
+  "scholar_id": "5beC28QAAAAJ",
+  "source": "AUTHOR_PROFILE_PAGE",
+  "name": "Daoze ZHANG",
+  "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=5beC28QAAAAJ&citpid=2",
+  "affiliation": "Zhejiang University",
+  "organization": 1118375729466322660,
+  "interests": [
+    "deep learning",
+    "multimodal LLMs",
+    "AI for science"
+  ],
+  "email_domain": "@zju.edu.cn",
+  "homepage": "https://daozezhang.github.io/",
+  "citedby": 221,
+  "publications": {
+    "5beC28QAAAAJ:YsMSGLbcyi4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Brant: Foundation model for intracranial neural signal",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:YsMSGLbcyi4C",
+      "num_citations": 70,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6823231202470438762",
+      "cites_id": [
+        "6823231202470438762"
+      ]
+    },
+    "5beC28QAAAAJ:zYLM7Y9cAGgC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Swift: a scalable lightweight infrastructure for fine-tuning",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:zYLM7Y9cAGgC",
+      "num_citations": 66,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10192488984855624850",
+      "cites_id": [
+        "10192488984855624850"
+      ]
+    },
+    "5beC28QAAAAJ:d1gkVwhDpl0C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Brant-2: Foundation model for brain signals",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:d1gkVwhDpl0C",
+      "num_citations": 43,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3704573999717070589,6380099251194123699",
+      "cites_id": [
+        "3704573999717070589",
+        "6380099251194123699"
+      ]
+    },
+    "5beC28QAAAAJ:9yKSN-GCB0IC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Brant-x: A unified physiological signal alignment framework",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:9yKSN-GCB0IC",
+      "num_citations": 21,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6976677079982625132",
+      "cites_id": [
+        "6976677079982625132"
+      ]
+    },
+    "5beC28QAAAAJ:u5HHmVD_uO8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Ppi: Pretraining brain signal model for patient-independent seizure detection",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:u5HHmVD_uO8C",
+      "num_citations": 13,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3809985066356734794",
+      "cites_id": [
+        "3809985066356734794"
+      ]
+    },
+    "5beC28QAAAAJ:Tyk-4Ss8FVUC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Re2: A Consistency-ensured Dataset for Full-stage Peer Review and Multi-turn Rebuttal Discussions",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:Tyk-4Ss8FVUC",
+      "num_citations": 4,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=775554827334420856,2072827908413638064",
+      "cites_id": [
+        "775554827334420856",
+        "2072827908413638064"
+      ]
+    },
+    "5beC28QAAAAJ:2osOgNQ5qMEC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "DMNet: Self-comparison Driven Model for Subject-independent Seizure Detection",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:2osOgNQ5qMEC",
+      "num_citations": 2,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9545442971239148482",
+      "cites_id": [
+        "9545442971239148482"
+      ]
+    },
+    "5beC28QAAAAJ:qjMakFHDy7sC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Deep learning-powered electrical brain signals analysis: Advancing neurological diagnostics",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:qjMakFHDy7sC",
+      "num_citations": 1,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16925062601732241523",
+      "cites_id": [
+        "16925062601732241523"
+      ]
+    },
+    "5beC28QAAAAJ:eQOLeE2rZwMC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Beatrix: Out-of-Distribution Generalization of Large EEG Model via Invariant Contrastive Fine-Tuning"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:eQOLeE2rZwMC",
+      "num_citations": 1,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12703430977801352815",
+      "cites_id": [
+        "12703430977801352815"
+      ]
+    },
+    "5beC28QAAAAJ:IjCSPb-OGe4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "PD3: A Project Duplication Detection Framework via Adapted Multi-Agent Debate",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:IjCSPb-OGe4C",
+      "num_citations": 0
+    }
+  },
+  "citedby5y": 221,
+  "hindex": 5,
+  "hindex5y": 5,
+  "i10index": 5,
+  "i10index5y": 5,
+  "cites_per_year": {
+    "2023": 1,
+    "2024": 47,
+    "2025": 173
+  },
+  "updated": "2025-11-14 23:17:22.202917"
+}
