@@ -12,9 +12,9 @@ const dict = {
     "College": "浙江大学 计算机科学与技术学院",
 
     "Hello": "您好，我叫张道泽，目前正在<a href='https://www.zju.edu.cn/english/'>浙江大学</a>攻读硕士学位，" + 
-        "有幸在<a href='http://yangy.org/'>杨洋</a>教授的指导下于<a href='http://www.dcd.zju.edu.cn/'>DCD实验室</a>开展研究。" + 
+        "有幸在<a href='http://yangy.org/'>杨洋</a>教授的指导下于AINet实验室开展研究。" + 
         "我的研究兴趣包括深度学习和数据挖掘在医疗保健领域以及时间序列分析中的应用。此外，我还在积极探索大语言模型和多模态语言模型领域的前沿技术。" + 
-        "我已经在诸如NeurIPS和KDD的AI国际顶会上发表多篇论文" + 
+        "我已经在诸如NeurIPS、ACL、CVPR和KDD的AI国际顶会上发表多篇论文" + 
         " <a href='https://scholar.google.com/citations?user=5beC28QAAAAJ' target='_blank'>" + 
         "<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DaozeZhang/DaozeZhang.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&style=flat&labelColor=f0f0f0&color=8fb9ef'/></a>" + 
         "。如果您正在寻找任何形式的学术合作，欢迎您随时与我联系。此外，我目前正在寻求工业界的工作机会。如果您有任何指引，请随时与我联系，非常感谢！",    
@@ -38,8 +38,12 @@ const dict = {
     "timeline6": "<div class='timeline-date'> 2023年9月 </div> <div class='timeline-title'> 研究 </div> <div class='timeline-desc'> <b>1篇论文</b>被NeurIPS 2023接收 (<b>第一作者</b>) </div> <div class='timeline-desc'> <b>1篇论文</b>被NeurIPS 2023接收 (<b>共同第一作者</b>) </div>",
     "timeline7": "<div class='timeline-date'> 2024年5月 </div> <div class='timeline-title'> 研究 </div> <div class='timeline-desc'> <b>1篇论文</b>被SIGKDD 2024接收 (<b>第一作者</b>) </div> <div class='timeline-desc'> <b>1篇论文</b>挂在arXiv (<b>第二作者</b>) </div>",
     "timeline8": "<div class='timeline-date'> 2024年10月 </div> <div class='timeline-title'> 荣誉 </div> <div class='timeline-desc'> 以人工智能研究所硕士第一名获得国家奖学金 </div>",
+    "timeline9": "<div class='timeline-date'> 2025年5月 </div> <div class='timeline-title'> 研究 </div> <div class='timeline-desc'> <b>1篇论文</b>被ACL 2025接收 (<b>第一作者</b>) </div> <div class='timeline-desc'> <b>1篇论文 (SWIFT) </b>发表在AAAI 2025</div> <div class='timeline-desc'> 现在SWIFT已经获得了超过12,000 stars⭐️！ </div>",
+    "timeline10": "<div class='timeline-date'> 2026年2月 </div> <div class='timeline-title'> 研究 </div> <div class='timeline-desc'> <b>1篇论文</b>发表在WSDM 2025 (<b>第一作者</b>) <div class='timeline-desc'> <b>1篇论文</b>被CVPR 2026接收 (<b>共同第一作者</b>) </div>",
     
+
     "Selected Honors": "主要荣誉",
+    "honor_yanjiusheng_shengyou": "浙江省优秀硕士毕业生，2026年（前5%）",
     "honor11": "提名并入围竺可桢奖学金（校设最高奖学金）校级答辩（前0.05%）",
     "honor10": "国家奖学金，2024年（人工智能研究所硕士第一名，前1%）",
     "honor9": "浙江大学优秀研究生，2024年",
@@ -53,7 +57,8 @@ const dict = {
     "honor1": "浙江大学优秀共青团员，2020年",
 
     "direction1": "医疗健康领域的人工智能",
-    "direction2": "大语言模型",
+    "direction2": "大语言模型：文稿自动评审",
+    "direction3": "多模态与大语言模型",
 
     "Conference": "学术会议",
     "ICLR26": "在ICLR 2026担任Program committee member",
@@ -81,12 +86,12 @@ const dict = {
     "Misc": "<b>Misc</b>",
     "College": "College of Computer Science, ZJU",
 
-    "Hello": "Hello, my name is Daoze Zhang and I am currently pursuing a Master's degree in <a href='https://www.zju.edu.cn/english/'>Zhejiang University</a>, fortunately advised by <a href='http://yangy.org/'>Prof. Yang Yang</a> in <a href='http://www.dcd.zju.edu.cn/'>DCD Lab</a>. " + 
+    "Hello": "Hello, my name is Daoze Zhang and I am currently pursuing a Master's degree in <a href='https://www.zju.edu.cn/english/'>Zhejiang University</a>, fortunately advised by <a href='http://yangy.org/'>Prof. Yang Yang</a> in AINet Lab. " + 
         "My research interests include deep learning and data mining in the healthcare field and for time series analysis. Additionally, I am actively exploring more cutting-edge technologies in the field of large language models and multimodal language models. " + 
         "I have published several papers" + 
         " <a href='https://scholar.google.com/citations?user=5beC28QAAAAJ' target='_blank'>" + 
         "<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DaozeZhang/DaozeZhang.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&style=flat&labelColor=f0f0f0&color=8fb9ef'/></a>" + 
-        " at the top international AI conferences such as NeurIPS and KDD. " + 
+        " at the top international AI conferences such as NeurIPS, ACL, CVPR and KDD. " + 
         "If you are looking for any form of academic cooperation, please feel free to touch me. " + 
         "<b>Futhermore, I am currently seeking job opportunities in industry. Please do not hesitate to contact me if you have any leads.</b> Thank you!",
     "Research": "Research Topics",
@@ -107,10 +112,13 @@ const dict = {
     "timeline3": "<div class='timeline-date'> Jul. 2021 </div> <div class='timeline-title'> Awards </div> <div class='timeline-desc'> Zhejiang Provincial Government Scholarship </div> <div class='timeline-desc'> First-class Scholarship of ZJU </div> <div class='timeline-desc'> Outstanding Student Scholarship of CTZ Edu Fdn </div>",
     "timeline5": "<div class='timeline-date'> Jul. 2023 </div> <div class='timeline-title'> Awards </div> <div class='timeline-desc'> Outstanding Undergraduate Graduate of Zhejiang Province </div> <div class='timeline-desc'> Outstanding Undergraduate Graduate of ZJU </div>",
     "timeline6": "<div class='timeline-date'> Sept. 2023 </div> <div class='timeline-title'> Research </div> <div class='timeline-desc'> <b>1 paper</b> accepted by NeurIPS 2023 (<b>first author</b>) </div> <div class='timeline-desc'> <b>1 paper</b> accepted by NeurIPS 2023 (<b>co-first author</b>) </div>",
-    "timeline7": "<div class='timeline-date'> May. 2024 </div> <div class='timeline-title'> Research </div> <div class='timeline-desc'> <b>1 paper</b> accepted by SIGKDD 2024 (<b>first author</b>) </div> <div class='timeline-desc'> <b>1 paper</b> posted on arXiv preprint (<b>second author</b>) </div>",
+    "timeline7": "<div class='timeline-date'> May 2024 </div> <div class='timeline-title'> Research </div> <div class='timeline-desc'> <b>1 paper</b> accepted by SIGKDD 2024 (<b>first author</b>) </div> <div class='timeline-desc'> <b>1 paper</b> posted on arXiv preprint (<b>second author</b>) </div>",
     "timeline8": "<div class='timeline-date'> Oct. 2024 </div> <div class='timeline-title'> Awards </div> <div class='timeline-desc'> National Scholarship </div> <div class='timeline-desc'> as 1st place among Masters of the AI Institute </div>",
+    "timeline9": "<div class='timeline-date'> May 2025 </div> <div class='timeline-title'> Research </div> <div class='timeline-desc'> <b>1 paper</b> accepted by ACL 2025 (<b>first author</b>) </div> <div class='timeline-desc'> <b>1 paper (SWIFT)</b> published by AAAI 2025 </div> <div class='timeline-desc'> Now SWIFT has <b>over 12,000</b> stars⭐️! </div>",
+    "timeline10": "<div class='timeline-date'> Feb. 2026 </div> <div class='timeline-title'> Research </div> <div class='timeline-desc'> <b>1 paper</b> published by WSDM 2026 (<b>first author</b>) </div> <div class='timeline-desc'> <b>1 paper</b> accepted by CVPR 2026 (<b>co-first author</b>) </div>",
 
     "Selected Honors": "Selected Honors",
+    "honor_yanjiusheng_shengyou": "Outstanding Master's Graduate of Zhejiang Province, 2026 (Top 5%)",
     "honor11": "Advanced to the university-level defense for the Chu Kochen Scholarship, the highest honor in ZJU (Finalist, Top 0.05%)", 
     "honor10": "National Scholarship, 2024 (1st place among Masters of the AI Institute, Top 1%)",
     "honor9": "Outstanding Postgraduate Students of Zhejiang University, 2024",
@@ -125,6 +133,7 @@ const dict = {
 
     "direction1": "AI for Healthcare: Deep Learning on Neural Signals",
     "direction2": "Large Language Models: Automatic Review of Documents",
+    "direction3": "Multimodality and LLMs",
 
     "Conference": "Conference",
     "ICLR26": "Program committee member of ICLR 2026",
