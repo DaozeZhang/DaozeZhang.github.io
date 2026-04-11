@@ -17,12 +17,13 @@ const dict = {
         "我已经在诸如NeurIPS、ACL、CVPR和KDD的AI国际顶会上发表多篇论文" + 
         " <a href='https://scholar.google.com/citations?user=5beC28QAAAAJ' target='_blank'>" + 
         "<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DaozeZhang/DaozeZhang.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&style=flat&labelColor=f0f0f0&color=8fb9ef'/></a>" + 
-        "。如果您正在寻找任何形式的学术合作，欢迎您随时与我联系。此外，我目前正在寻求工业界的工作机会。如果您有任何指引，请随时与我联系，非常感谢！",    
+        "。如果您正在寻找任何形式的学术合作，欢迎您随时与我联系。" + 
+        "此外，我也会在小红书上记录自己在学习、科研和求职方面的经历与思考，希望能够分享自己的经验与见解，来无偿地帮助更多朋友在他们的未来道路上更加自信。",
     "Research": "研究方向",
     "Machine": "医疗健康领域的人工智能",
     "Time": "时间序列分析",
-    "Multimodal": "(多模态)大语言模型",
-    "Recommendation": "推荐系统",
+    "Multimodal": "大语言模型与多模态",
+    "Recommendation": "电商搜索与广告系统",
     
     "Education": "教育经历",
     "Zhejiang": "浙江大学",
@@ -93,12 +94,12 @@ const dict = {
         "<img alt='Google Scholar Citations' src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DaozeZhang/DaozeZhang.github.io/google-scholar-stats/gs_data_shieldsio.json&logo=google-scholar&style=flat&labelColor=f0f0f0&color=8fb9ef'/></a>" + 
         " at the top international AI conferences such as NeurIPS, ACL, CVPR and KDD. " + 
         "If you are looking for any form of academic cooperation, please feel free to touch me. " + 
-        "<b>Futhermore, I am currently seeking job opportunities in industry. Please do not hesitate to contact me if you have any leads.</b> Thank you!",
+        "Furthermore, I am also passionate about sharing. On RedNote, I write about my experiences and reflections on learning, research, and job hunting, hoping to share my experiences and insights freely and help more friends feel more confident about their own paths.",
     "Research": "Research Topics",
     "Machine": "Machine Learning for Healthcare",
     "Time": "Time Series Analysis",
-    "Multimodal": "(Multimodal) Large Language Models",
-    "Recommendation": "Recommendation System",
+    "Multimodal": "Large Language Models & Multimodality",
+    "Recommendation": "Search & Advertising for E-commerce",
 
     "Education": "Education",
     "Zhejiang": "Zhejiang University",
