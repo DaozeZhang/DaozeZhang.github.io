@@ -1,0 +1,281 @@
+{
+  "container_type": "Author",
+  "filled": [
+    "basics",
+    "publications",
+    "indices",
+    "counts"
+  ],
+  "scholar_id": "5beC28QAAAAJ",
+  "source": "AUTHOR_PROFILE_PAGE",
+  "name": "Daoze ZHANG",
+  "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=5beC28QAAAAJ&citpid=2",
+  "affiliation": "Zhejiang University",
+  "organization": 1118375729466322660,
+  "interests": [
+    "deep learning",
+    "multimodal LLMs",
+    "AI for science"
+  ],
+  "email_domain": "@zju.edu.cn",
+  "homepage": "https://daozezhang.github.io/",
+  "citedby": 849,
+  "publications": {
+    "5beC28QAAAAJ:e5wmG9Sq2KIC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Swift: a scalable lightweight infrastructure for fine-tuning",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:e5wmG9Sq2KIC",
+      "num_citations": 353,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10192488984855624850,11228894725328443805",
+      "cites_id": [
+        "10192488984855624850",
+        "11228894725328443805"
+      ]
+    },
+    "5beC28QAAAAJ:YsMSGLbcyi4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Brant: Foundation model for intracranial neural signal",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:YsMSGLbcyi4C",
+      "num_citations": 133,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6823231202470438762",
+      "cites_id": [
+        "6823231202470438762"
+      ]
+    },
+    "5beC28QAAAAJ:k_IJM867U9cC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "SWIFT: A Scalable lightWeight Infrastructure for Fine-Tuning",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:k_IJM867U9cC",
+      "num_citations": 122,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4396096214207765694,6717580809669400183,16226033440162125263,15851744611744136459",
+      "cites_id": [
+        "4396096214207765694",
+        "6717580809669400183",
+        "16226033440162125263",
+        "15851744611744136459"
+      ]
+    },
+    "5beC28QAAAAJ:_kc_bZDykSQC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Brainwave: A brain signal foundation model for clinical applications",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:_kc_bZDykSQC",
+      "num_citations": 55,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6380099251194123699,17255897580513683946,4616207208315129454",
+      "cites_id": [
+        "6380099251194123699",
+        "17255897580513683946",
+        "4616207208315129454"
+      ]
+    },
+    "5beC28QAAAAJ:9yKSN-GCB0IC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Brant-X: A unified physiological signal alignment framework",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:9yKSN-GCB0IC",
+      "num_citations": 47,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6976677079982625132,7350086338763282250",
+      "cites_id": [
+        "6976677079982625132",
+        "7350086338763282250"
+      ]
+    },
+    "5beC28QAAAAJ:qxL8FJ1GzNcC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Brant-2: Foundation model for brain signals",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:qxL8FJ1GzNcC",
+      "num_citations": 38,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3704573999717070589",
+      "cites_id": [
+        "3704573999717070589"
+      ]
+    },
+    "5beC28QAAAAJ:Tyk-4Ss8FVUC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Re2: A Consistency-ensured Dataset for Full-stage Peer Review and Multi-turn Rebuttal Discussions",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:Tyk-4Ss8FVUC",
+      "num_citations": 23,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=775554827334420856,383138563553072045,2072827908413638064",
+      "cites_id": [
+        "775554827334420856",
+        "383138563553072045",
+        "2072827908413638064"
+      ]
+    },
+    "5beC28QAAAAJ:u5HHmVD_uO8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Ppi: Pretraining brain signal model for patient-independent seizure detection",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:u5HHmVD_uO8C",
+      "num_citations": 18,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3809985066356734794",
+      "cites_id": [
+        "3809985066356734794"
+      ]
+    },
+    "5beC28QAAAAJ:qjMakFHDy7sC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Deep learning-powered electrical brain signals analysis: Advancing neurological diagnostics",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:qjMakFHDy7sC",
+      "num_citations": 16,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16925062601732241523",
+      "cites_id": [
+        "16925062601732241523"
+      ]
+    },
+    "5beC28QAAAAJ:qUcmZB5y_30C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "MOON: Generative MLLM-based multimodal representation learning for e-commerce product understanding",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:qUcmZB5y_30C",
+      "num_citations": 13,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3970783334455026452",
+      "cites_id": [
+        "3970783334455026452"
+      ]
+    },
+    "5beC28QAAAAJ:hC7cP41nSMkC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Moon embedding: Multimodal representation learning for e-commerce search advertising",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:hC7cP41nSMkC",
+      "num_citations": 9,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5914062638732864493",
+      "cites_id": [
+        "5914062638732864493"
+      ]
+    },
+    "5beC28QAAAAJ:-f6ydRqryjwC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Moon2. 0: Dynamic modality-balanced multimodal representation learning for e-commerce product understanding",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:-f6ydRqryjwC",
+      "num_citations": 8,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7030620365892355248",
+      "cites_id": [
+        "7030620365892355248"
+      ]
+    },
+    "5beC28QAAAAJ:2osOgNQ5qMEC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "DMNet: self-comparison driven model for subject-independent seizure detection",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:2osOgNQ5qMEC",
+      "num_citations": 6,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9545442971239148482",
+      "cites_id": [
+        "9545442971239148482"
+      ]
+    },
+    "5beC28QAAAAJ:mB3voiENLucC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "MOON3. 0: Reasoning-aware Multimodal Representation Learning for E-commerce Product Understanding",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:mB3voiENLucC",
+      "num_citations": 4,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6736666703799299370",
+      "cites_id": [
+        "6736666703799299370"
+      ]
+    },
+    "5beC28QAAAAJ:hFOr9nPyWt4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Sharper and faster mean better: Towards more efficient vision-language model for hour-scale long video understanding",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:hFOr9nPyWt4C",
+      "num_citations": 4,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17788932009508729332",
+      "cites_id": [
+        "17788932009508729332"
+      ]
+    },
+    "5beC28QAAAAJ:IjCSPb-OGe4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "PD3: A Project Duplication Detection Framework via Adapted Multi-Agent Debate",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:IjCSPb-OGe4C",
+      "num_citations": 0
+    }
+  },
+  "citedby5y": 849,
+  "hindex": 10,
+  "hindex5y": 10,
+  "i10index": 10,
+  "i10index5y": 10,
+  "cites_per_year": {
+    "2024": 42,
+    "2025": 292,
+    "2026": 512
+  },
+  "updated": "2026-09-02 10:39:52.686997"
+}
