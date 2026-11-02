@@ -2,8 +2,13 @@ from scholarly import scholarly, ProxyGenerator  # daoze modified
 from scholarly.author_parser import AuthorParser
 import json
 from datetime import datetime
+import logging
 import os
 import time
+
+# 诊断：打开 scholarly 的 INFO 日志（每次请求的状态码 / 验证码 / 超时 / 异常原因）；secret 会被 GitHub Actions 自动打码
+logging.basicConfig(level=logging.WARNING, format='%(asctime)s %(name)s %(levelname)s: %(message)s')
+logging.getLogger('scholarly').setLevel(logging.INFO)
 
 MAX_RETRIES = 3        # 最多重试 3 次
 RETRY_DELAY = 180      # 每次失败后等待 3 分钟（180 秒）
