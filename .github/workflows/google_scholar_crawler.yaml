@@ -1,4 +1,4 @@
-name: Get Citation Data
+name: Get Citation Data  # daoze modified
 
 on:
   page_build:
@@ -17,12 +17,12 @@ jobs:
       contents: write       # 允许往仓库推分支
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.x'
+          python-version: '3.12'  # 固定版本，'3.x' 会自动漂到最新版（如 3.15）导致依赖不兼容
 
       # 如非必要可以直接删掉 apt-get 这步；确实要装，就加 -y 并先 update
       # - name: Install system packages (optional)
