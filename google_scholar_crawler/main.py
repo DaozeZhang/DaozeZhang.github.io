@@ -4,6 +4,8 @@ import json
 from datetime import datetime
 import logging
 import os
+import re
+import sys
 import time
 
 # 诊断：打开 scholarly 的 INFO 日志（每次请求的状态码 / 验证码 / 超时 / 异常原因）；secret 会被 GitHub Actions 自动打码
@@ -24,7 +26,19 @@ def setup_proxy():
         raise RuntimeError("ScraperAPI setup failed (invalid key or credits exhausted).")
     # 主/副代理都用 ScraperAPI；只传一个参数时 scholarly 会自动去试免费代理
     scholarly.use_proxy(pg, pg)
+    # ScraperAPI 自身已在服务端重试；scholarly 默认每页 5 次 × 主/副 2 轮 × 外层 3 次 = 30 次请求，
+    # 且 ScraperAPI 对 404 也计费（Google 域名 25 credits/次），一次失败运行会烧掉 ~750 credits。
+    # 降到每轮 1 次：单次运行最坏 2 轮 × 外层 3 次 = 6 次请求（~150 credits）
+    scholarly.set_retries(1)
     print("Using ScraperAPI proxy.")
+
+def check_scholar_id():
+    """GOOGLE_SCHOLAR_ID 格式不对（空格/换行/整条 URL）时 Scholar 返回 404，直接报错而不是白烧请求"""
+    sid = os.environ.get('GOOGLE_SCHOLAR_ID', '')
+    if not re.fullmatch(r'[A-Za-z0-9_-]{12}', sid):
+        sys.exit(f"GOOGLE_SCHOLAR_ID looks invalid: length={len(sid)}, "
+                 f"has_whitespace={any(c.isspace() for c in sid)}, has_url={'scholar' in sid or 'user=' in sid}. "
+                 f"Expected the 12-char id from the profile URL (…citations?user=<ID>).")
 
 def fetch_author_data():
     """尝试抓取 Google Scholar 作者数据"""
@@ -37,6 +51,7 @@ def fetch_author_data():
     return author
 
 def main():
+    check_scholar_id()
     setup_proxy()
     for attempt in range(1, MAX_RETRIES + 1):
         try:
