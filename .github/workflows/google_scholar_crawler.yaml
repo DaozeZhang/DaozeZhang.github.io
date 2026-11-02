@@ -3,10 +3,7 @@ name: Get Citation Data  # daoze modified
 on:
   page_build:
   schedule:
-    - cron: '0 0 * * *'   # 每天 0:00 UTC 触发
-    - cron: '0 6 * * *'   # 每天 6:00 UTC 触发
-    - cron: '0 12 * * *'   # 每天 12:00 UTC 触发
-    - cron: '0 18 * * *'   # 每天 18:00 UTC 触发
+    - cron: '0 0 * * *'   # 每天 0:00 UTC（北京时间 8:00）触发；ScraperAPI 免费 1000 credits/月，每次约 26 credits，每天 1 次够用
   workflow_dispatch:        # 允许手动触发
 
 jobs:
@@ -40,6 +37,7 @@ jobs:
         timeout-minutes: 15
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}   # 可选；未设置时直连
         run: |
           set -e
           python main.py

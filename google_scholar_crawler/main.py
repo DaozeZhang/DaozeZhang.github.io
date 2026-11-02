@@ -1,4 +1,5 @@
-from scholarly import scholarly
+from scholarly import scholarly, ProxyGenerator  # daoze modified
+from scholarly.author_parser import AuthorParser
 import json
 from datetime import datetime
 import os
@@ -7,15 +8,31 @@ import time
 MAX_RETRIES = 3        # 最多重试 3 次
 RETRY_DELAY = 180      # 每次失败后等待 3 分钟（180 秒）
 
+def setup_proxy():
+    """有 SCRAPER_API_KEY 就走 ScraperAPI 代理；没有就直连（GitHub runner 直连大概率被 Scholar 封）"""
+    key = os.environ.get('SCRAPER_API_KEY')
+    if not key:
+        print("SCRAPER_API_KEY not set — connecting directly.")
+        return
+    pg = ProxyGenerator()
+    if not pg.ScraperAPI(key):
+        raise RuntimeError("ScraperAPI setup failed (invalid key or credits exhausted).")
+    # 主/副代理都用 ScraperAPI；只传一个参数时 scholarly 会自动去试免费代理
+    scholarly.use_proxy(pg, pg)
+    print("Using ScraperAPI proxy.")
+
 def fetch_author_data():
     """尝试抓取 Google Scholar 作者数据"""
-    author = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
+    # 只请求 1 次 Scholar 主页（原 search_author_id + fill 会请求 2 次，ScraperAPI 每次 Google 请求 25 credits）
+    # 不联网构造与 search_author_id 相同的初始 author 对象，再一次 fill 全部所需 sections，输出字段不变
+    author = AuthorParser(None).get_author(os.environ['GOOGLE_SCHOLAR_ID'])
     scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
     author['updated'] = str(datetime.now())
     author['publications'] = {v['author_pub_id']: v for v in author['publications']}
     return author
 
 def main():
+    setup_proxy()
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             print(f"Attempt {attempt}/{MAX_RETRIES} — fetching author data...")
