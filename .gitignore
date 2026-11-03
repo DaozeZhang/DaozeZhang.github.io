@@ -1,1 +1,3 @@
 .DS_Store
+.workbuddy/scholar-local/
+google_scholar_crawler/__pycache__/

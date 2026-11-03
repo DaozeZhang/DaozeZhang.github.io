@@ -1,13 +1,13 @@
 name: Get Citation Data  # daoze modified
 
+# Automated updates now run on the local Mac via update_local.py / WorkBuddy.
+# Keep the old implementation for reference, but do not spend ScraperAPI credits.
 on:
-  page_build:
-  schedule:
-    - cron: '0 0 * * *'   # 每天 0:00 UTC（北京时间 8:00）触发；ScraperAPI 免费 1000 credits/月，每次约 26 credits，每天 1 次够用
-  workflow_dispatch:        # 允许手动触发
+  workflow_dispatch:
 
 jobs:
   build:
+    if: ${{ false }}  # Cloud crawler disabled; local Mac publishes google-scholar-stats.
     runs-on: ubuntu-latest
     timeout-minutes: 30     # 整个 job 最长 30 分钟
     permissions:
