@@ -18,7 +18,7 @@
       },
       "filled": false,
       "author_pub_id": "5beC28QAAAAJ:e5wmG9Sq2KIC",
-      "num_citations": 456,
+      "num_citations": 455,
       "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10192488984855624850,11228894725328443805,6717580809669400183",
       "cites_id": [
         "10192488984855624850",
@@ -259,15 +259,15 @@
       ]
     }
   },
-  "citedby": 994,
-  "citedby5y": 994,
+  "citedby": 993,
+  "citedby5y": 993,
   "hindex": 10,
   "hindex5y": 10,
   "i10index": 11,
   "i10index5y": 11,
   "cites_per_year": {
     "2024": 41,
-    "2025": 291,
+    "2025": 290,
     "2026": 657
   },
   "name": "Daoze ZHANG",
@@ -281,5 +281,5 @@
   ],
   "email_domain": "@zju.edu.cn",
   "homepage": "https://daozezhang.github.io/",
-  "updated": "2026-11-06 17:00:51.998222"
+  "updated": "2026-11-07 19:01:35.148845"
 }
