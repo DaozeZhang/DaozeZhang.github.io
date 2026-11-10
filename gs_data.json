@@ -18,7 +18,7 @@
       },
       "filled": false,
       "author_pub_id": "5beC28QAAAAJ:e5wmG9Sq2KIC",
-      "num_citations": 456,
+      "num_citations": 463,
       "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10192488984855624850,11228894725328443805,6717580809669400183",
       "cites_id": [
         "10192488984855624850",
@@ -50,12 +50,12 @@
       },
       "filled": false,
       "author_pub_id": "5beC28QAAAAJ:k_IJM867U9cC",
-      "num_citations": 120,
-      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4396096214207765694,16226033440162125263,15851744611744136459",
+      "num_citations": 121,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4396096214207765694,15851744611744136459,16226033440162125263",
       "cites_id": [
         "4396096214207765694",
-        "16226033440162125263",
-        "15851744611744136459"
+        "15851744611744136459",
+        "16226033440162125263"
       ]
     },
     "5beC28QAAAAJ:_kc_bZDykSQC": {
@@ -259,8 +259,8 @@
       ]
     }
   },
-  "citedby": 996,
-  "citedby5y": 996,
+  "citedby": 1004,
+  "citedby5y": 1004,
   "hindex": 10,
   "hindex5y": 10,
   "i10index": 11,
@@ -268,7 +268,7 @@
   "cites_per_year": {
     "2024": 41,
     "2025": 290,
-    "2026": 660
+    "2026": 668
   },
   "name": "Daoze ZHANG",
   "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=5beC28QAAAAJ&citpid=2",
@@ -281,5 +281,5 @@
   ],
   "email_domain": "@zju.edu.cn",
   "homepage": "https://daozezhang.github.io/",
-  "updated": "2026-11-09 17:00:46.543789"
+  "updated": "2026-11-10 17:00:59.071012"
 }
