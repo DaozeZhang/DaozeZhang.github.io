@@ -243,6 +243,21 @@
         "6736666703799299370"
       ]
     },
+    "5beC28QAAAAJ:hMod-77fHWUC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Can Omni-modal LLMs Understand Spoken Intentions?",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:hMod-77fHWUC",
+      "num_citations": 1,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8295445499050689679",
+      "cites_id": [
+        "8295445499050689679"
+      ]
+    },
     "5beC28QAAAAJ:IjCSPb-OGe4C": {
       "container_type": "Publication",
       "source": "AUTHOR_PUBLICATION_ENTRY",
@@ -257,10 +272,21 @@
       "cites_id": [
         "17859917888337856446"
       ]
+    },
+    "5beC28QAAAAJ:NMxIlDl6LWMC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:NMxIlDl6LWMC",
+      "num_citations": 0
     }
   },
-  "citedby": 1030,
-  "citedby5y": 1030,
+  "citedby": 1031,
+  "citedby5y": 1031,
   "hindex": 10,
   "hindex5y": 10,
   "i10index": 11,
@@ -268,7 +294,7 @@
   "cites_per_year": {
     "2024": 42,
     "2025": 287,
-    "2026": 695
+    "2026": 696
   },
   "name": "Daoze ZHANG",
   "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=5beC28QAAAAJ&citpid=2",
@@ -281,5 +307,5 @@
   ],
   "email_domain": "@zju.edu.cn",
   "homepage": "https://daozezhang.github.io/",
-  "updated": "2026-11-23 10:46:35.265507"
+  "updated": "2026-11-23 17:01:08.707829"
 }
