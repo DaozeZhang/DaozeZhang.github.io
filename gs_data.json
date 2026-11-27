@@ -18,7 +18,7 @@
       },
       "filled": false,
       "author_pub_id": "5beC28QAAAAJ:e5wmG9Sq2KIC",
-      "num_citations": 476,
+      "num_citations": 480,
       "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10192488984855624850,11228894725328443805,6717580809669400183",
       "cites_id": [
         "10192488984855624850",
@@ -35,7 +35,7 @@
       },
       "filled": false,
       "author_pub_id": "5beC28QAAAAJ:YsMSGLbcyi4C",
-      "num_citations": 151,
+      "num_citations": 152,
       "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6823231202470438762",
       "cites_id": [
         "6823231202470438762"
@@ -67,7 +67,7 @@
       },
       "filled": false,
       "author_pub_id": "5beC28QAAAAJ:_kc_bZDykSQC",
-      "num_citations": 69,
+      "num_citations": 70,
       "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6380099251194123699,17255897580513683946,4616207208315129454",
       "cites_id": [
         "6380099251194123699",
@@ -198,6 +198,21 @@
         "7030620365892355248"
       ]
     },
+    "5beC28QAAAAJ:hFOr9nPyWt4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Sharper and faster mean better: Towards more efficient vision-language model for hour-scale long video understanding",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "5beC28QAAAAJ:hFOr9nPyWt4C",
+      "num_citations": 8,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17788932009508729332",
+      "cites_id": [
+        "17788932009508729332"
+      ]
+    },
     "5beC28QAAAAJ:2osOgNQ5qMEC": {
       "container_type": "Publication",
       "source": "AUTHOR_PUBLICATION_ENTRY",
@@ -211,21 +226,6 @@
       "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9545442971239148482",
       "cites_id": [
         "9545442971239148482"
-      ]
-    },
-    "5beC28QAAAAJ:hFOr9nPyWt4C": {
-      "container_type": "Publication",
-      "source": "AUTHOR_PUBLICATION_ENTRY",
-      "bib": {
-        "title": "Sharper and faster mean better: Towards more efficient vision-language model for hour-scale long video understanding",
-        "pub_year": "2025"
-      },
-      "filled": false,
-      "author_pub_id": "5beC28QAAAAJ:hFOr9nPyWt4C",
-      "num_citations": 7,
-      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17788932009508729332",
-      "cites_id": [
-        "17788932009508729332"
       ]
     },
     "5beC28QAAAAJ:mB3voiENLucC": {
@@ -285,16 +285,16 @@
       "num_citations": 0
     }
   },
-  "citedby": 1034,
-  "citedby5y": 1034,
+  "citedby": 1041,
+  "citedby5y": 1041,
   "hindex": 10,
   "hindex5y": 10,
   "i10index": 11,
   "i10index5y": 11,
   "cites_per_year": {
-    "2024": 42,
-    "2025": 288,
-    "2026": 698
+    "2024": 41,
+    "2025": 290,
+    "2026": 704
   },
   "name": "Daoze ZHANG",
   "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=5beC28QAAAAJ&citpid=2",
@@ -307,5 +307,5 @@
   ],
   "email_domain": "@zju.edu.cn",
   "homepage": "https://daozezhang.github.io/",
-  "updated": "2026-11-25 17:00:27.423982"
+  "updated": "2026-11-27 17:01:12.971435"
 }
